@@ -9,13 +9,13 @@ from aiogram.filters import Command
 from aiogram.types import Message
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-BOT_TOKEN = "8225564218:AAEIfZopoKfU_r-HTZ-kzwUOAmw-rD6Z0J4"
+BOT_TOKEN = os.getenv("8225564218:AAEIfZopoKfU_r-HTZ-kzwUOAmw-rD6Z0J4")
 # Можно указать '@username' канала либо numeric ID ('-100...'):
-TARGET_CHAT_ID = "@fortune_cookies1"
+TARGET_CHAT_ID = os.getenv("@fortune_cookies1")
 
 # Часовой пояс, в котором должна быть «08:00».
 # Поставь что нужно: "Europe/Moscow", "America/Denver", и т.д.
-TZ = "Europe/Moscow"
+TZ = os.getenv("Europe/Moscow")
 
 FORTUNES = [
     "Сегодня тебе повезёт.",
